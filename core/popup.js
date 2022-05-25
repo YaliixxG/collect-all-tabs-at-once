@@ -11,7 +11,10 @@ chrome.storage.sync
 
 // 一键收集
 collectTabs.addEventListener('click', async () => {
-    let isStack = confirm('是否在已收集的标签基础上继续收集？');
+    let isStack = !!tabGroups.length
+        ? confirm('是否在已收集的标签基础上继续收集？')
+        : false;
+
     await oneBtnCollect(isStack);
     alert('标签收集成功 ~ (*^▽^*)');
 });
