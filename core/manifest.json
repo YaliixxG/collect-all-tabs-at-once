@@ -1,0 +1,22 @@
+{
+    "name": "Collect All Tabs At Once",
+    "manifest_version": 3,
+    "version": "1.0",
+    "description": "A Google Chrome extension to collect all tabs at once",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["tabs", "storage", "activeTab", "scripting"],
+    "action": {
+        "default_title": "一键收集页签",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "img/ct-logo.png"
+        }
+    },
+    "icons": {
+        "16": "img/ct-logo.png",
+        "48": "img/ct-logo.png",
+        "128": "img/ct-logo.png"
+    }
+}
