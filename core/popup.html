@@ -7,8 +7,12 @@
         <title>collectTabs</title>
         <style>
             body {
-                width: 240px;
+                width: 280px;
                 padding-top: 14px;
+                background-color: rgb(60, 60, 60);
+                color: #fff;
+                /* background-color: #fff;
+                color: #333; */
             }
             .ct-btn-group {
                 width: 100%;
@@ -31,6 +35,9 @@
                 height: 20px;
                 line-height: 20px;
             }
+            .ct-light-scheme {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -47,6 +54,12 @@
                 </div>
                 <div id="ct-check-history-tabs" class="ct-btn">
                     <img src="img/ct-history.png" /><span>已收集</span>
+                </div>
+                <div class="ct-btn ct-dark-scheme">
+                    <img src="img/ct-dark.png" /><span>天黑了</span>
+                </div>
+                <div class="ct-btn ct-light-scheme">
+                    <img src="img/ct-light.png" /><span>天亮了</span>
                 </div>
             </div>
             <div id="ct-history-wrap">

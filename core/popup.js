@@ -3,6 +3,8 @@ let openTabs = document.querySelector('#ct-open-tabs');
 let clearTabs = document.querySelector('#ct-clear-tabs');
 let checkHistoryTabs = document.querySelector('#ct-check-history-tabs');
 let historyTabs = document.querySelector('#ct-history-tabs');
+let darkScheme = document.querySelector('.ct-dark-scheme');
+let lightScheme = document.querySelector('.ct-light-scheme');
 let tabGroups = [];
 
 chrome.storage.sync
@@ -74,4 +76,18 @@ const renderHistoryTabs = () => {
 // 监听数据变化
 chrome.storage.onChanged.addListener(function(changes, namespace) {
     renderHistoryTabs();
+});
+
+darkScheme.addEventListener('click', () => {
+    lightScheme.style.display = 'block';
+    darkScheme.style.display = 'none';
+    document.body.style.color = '#333';
+    document.body.style.backgroundColor = '#fff';
+});
+
+lightScheme.addEventListener('click', () => {
+    lightScheme.style.display = 'none';
+    darkScheme.style.display = 'block';
+    document.body.style.color = '#fff';
+    document.body.style.backgroundColor = 'rgb(60, 60, 60)';
 });
