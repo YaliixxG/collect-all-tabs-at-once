@@ -69,7 +69,7 @@ const renderHistoryTabs = () => {
     }
     historyTabs.innerHTML = '';
     tabGroups.forEach(item => {
-        historyTabs.innerHTML += `<li>${item.title}</li>`;
+        historyTabs.innerHTML += `<li>${item.title.trim()}</li>`;
     });
 };
 
