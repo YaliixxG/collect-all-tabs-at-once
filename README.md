@@ -32,6 +32,14 @@ A Google Chrome extension to collect all tabs at once. 一个针对 Chrome 的�
 
 进入 chrome 扩展程序主页 -> 加载已解压的扩展程序 -> 选中 core 文件夹 -> 完成
 
+## 界面
+
+![界面展示一](./core/img/collect-all-tabs-at-once-dark.jpg)
+
+![界面展示二](./core/img/collect-all-tabs-at-once-light.jpg)
+
+![界面展示三](./core/img/collect-all-tabs-at-once-list.jpg)
+
 ## 最后
 
 这个扩展成功的解决了我大半年的懒癌，很多页签我从过年起到现在都没关过，就怕找不到。现在可以放心的关掉它，看看别的东西，哪次想看，再一次性点开它们。
